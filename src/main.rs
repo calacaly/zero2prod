@@ -1,3 +1,4 @@
-fn main() {
-    println!("Hello, world2!");
+#[tokio::main]
+async fn main() {
+    zero2prod::app::run().await.unwrap();
 }
