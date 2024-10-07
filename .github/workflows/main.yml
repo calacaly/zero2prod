@@ -48,6 +48,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: docker.io/calacaly/rust-builder:latest
+      options: --security-opt seccomp=unconfined
     steps:
       - name: checkout repository
         uses: actions/checkout@v3
